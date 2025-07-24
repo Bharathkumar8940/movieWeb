@@ -1,0 +1,69 @@
+<!DOCTYPE html>   
+ <html>   
+ <head>   
+  <title>Form in HTML</title>   
+</head>  
+<style>
+   body {
+  background: repeating-linear-gradient(
+    45deg, 
+    #000000 0px, #000 10px, 
+    rgb(0, 0, 0) 10px, rgb(0, 0, 0) 20px
+  );
+  background-size: 200% 200%;
+  animation: moveLines 0.7s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0 ; }
+  to { background-position: 100px 300px; }
+}
+.fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2.5s ease-in-out, transform 2s ease-in;
+        }
+</style>
+
+ <body style="background-color:  rgb(0, 0, 0);">  
+    <h1 style="color: rgb(255, 0, 0);text-align: center;">SIGN UP</h1> 
+      
+    <form>   
+     <fieldset id="back" class="fade-in" style="background-color: black;border-radius: 30px;color: white;border-color: black;  margin-left: 25em;margin-right: 25em; box-shadow: 0px 50px 100px rgb(244, 3, 3);">    
+        <div style="margin-left: 15em;margin-top: 3em;margin-bottom: 3em;"><label style="font-size: 18px;">Enter your full name</label><br>   
+            <input type="text" name="name" style="border-radius: 10px;height: 30px;width: 225px;"><br>  
+       
+             <label style="font-size: 18px;">Enter your email</label><br>   
+             <input type="email" name="email" style="border-radius: 10px;height: 30px;width: 225px;"><br> 
+              
+             <label type="id" style="font-size: 18px;">Username </label><br>   
+             <input type="text" name="id" style="border-radius: 10px;height: 30px;width: 225px;"><br> 
+             
+             <label style="font-size: 18px;">Enter your password</label><br>   
+             <input type="password" name="pass" style="border-radius: 10px;height: 30px;width: 225px;"><br> 
+               
+             <label style="font-size: 18px;">confirm your password</label><br>   
+             <input type="password" name="pass" style="border-radius: 10px;height: 30px;width: 225px;"><br>
+
+             <br><label style="font-size: 18px;">Enter your gender</label><br>   
+             <input type="radio" id="gender" name="gender" value="male"/>Male  <br>   
+             <input type="radio" id="gender" name="gender" value="female"/>Female <br/>     
+             <input type="radio" id="gender" name="gender" value="others"/>others <br/>    
+             
+             <label for="age" name="agee" style="font-size: 18px;">Enter Your Age</label>
+             <br>
+             <input name="agee" type="number" style="border-radius: 10px;height: 30px;width: 225px;">
+             <br>
+             <br> 
+             <input style="background-color: rgb(0, 255, 0);color: rgb(0, 0, 0);height: 40px;width: 80px;border-radius: 10px;;cursor: pointer;font-size:17px ;" id="submit" type="submit" value="sign-up"> 
+             <a style="color: red;" href="login.html">login ?</a>  </div>
+     </fieldset>   
+  </form>   
+  <script>window.onload = function() {
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+    });
+};</script>
+ </body>   
+</html>

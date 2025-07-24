@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+</head>
+<link rel="stylesheet" href="icon.png">
+<style>
+    .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2.5s ease-in-out, transform 2s ease-in;
+        }
+</style>
+<body style="background-color: black;color: whitesmoke;">
+
+    <fieldset  class="fade-in" style="background-color: black;border-radius: 30px;color: white;border-color: black; margin-top: 8em; margin-left: 25em;margin-right: 25em; box-shadow: 0px 0px 100px rgb(236, 4, 4);"><div class="login-container">
+        <div style="margin-left: 15em;margin-top: 3em;margin-bottom: 3em;"><h2 style="color: red;margin-left: 2em;">Login</h2>
+            <p style="font-size: 25px;">Username:</p>
+            <input type="text" id="username" placeholder="Enter Username"><br>
+            <p style="font-size: 25px;">Password:</p>
+            <input type="password" id="password" placeholder="Enter Password"><br>
+            <br>
+            <button onclick="validateLogin()" style="background-color: rgb(9, 246, 9);cursor: pointer;">Login</button>
+            <a href="regis.html" style="color:rgb(49, 7, 234);">Sign-up ?</a>
+            <p class="error" id="error-message" style="color: red;"></p></div>
+    </div></fieldset>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+            if (username === "Bharath" && password === "hburvk") {
+                window.location.href = "home.html"; 
+            } else {
+                errorMessage.innerText = "Invalid Username or Password!";
+            }
+        }
+        window.onload = function() {
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+    });
+};
+    </script>
+
+</body>
+</html>

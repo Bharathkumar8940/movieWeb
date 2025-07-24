@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="image/x-icon" href="icon.png">
+    <style>
+    button:hover {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 0, 0) !important;
+    cursor: pointer;
+}
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  border: 2px dotted rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.box > * {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);
+  padding: 1em;
+}
+.book {
+  border: 2px dotted rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.book > * {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);
+  padding: 1em;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    width: 10%; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.image-container img:hover {
+    transform: scale(1.2); 
+}
+.image-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    width: 10%; 
+}
+
+.image-content img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 8px;
+}
+
+
+.image-content img:hover {
+    transform: scale(1.2); 
+}
+.image-context {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    width: 10%; 
+}
+
+.image-context img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.image-context img:hover {
+    transform: scale(1.2); 
+}
+.image-compute {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 10%; 
+}
+
+.image-compute img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.image-compute img:hover {
+    transform: scale(1.2); 
+}
+.image-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 10%; 
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.image-box img:hover {
+    transform: scale(1.2);
+}
+
+
+    </style>
+   
+    <header>
+        <h1  style="background-color: black;color: red;text-align: center ; font-variant: small-caps;font-size: 40px;">Venomex</h1>
+    </header>
+    <hr>
+</head>
+<body style="background-color: black;">
+    <br>
+    <a href="login.html"><button style="height: 30px;width: 80px;cursor: pointer;;border-radius: 10px;margin-left: 50px;background-color: rgb(255, 0, 0);color: rgb(0, 0, 0); ">Login</button></a>
+    <div style="float: right;">
+        <label style="color: white;" for="search" name="ser">Search: </label>
+        
+        <input type="search" id="textip" style="border-radius: 50px;height: 35px;width: 300px;" name="ser" ; placeholder="search.......">
+        <button id="done" style="background-color: rgb(38, 173, 38);color: white;" onclick="validateLogin()">DONE</button>
+    </div>
+    <br>
+    <br><br>
+    <p style="color: red;margin-left: 27em;">Note: If you didn`t find you favourate movie select the search the box and type the movie name...</p>
+    <div class="image-box"> 
+        <div class="box">
+        <div >
+            <a href="preyforthedevil.mp4"><img src="h56.jpg" alt="Image 1" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Prey For The Devil</p>
+        </div>
+        <div >
+            <a href="possession.mp4"><img src="h65.png" alt="Image 4" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Possession</p>
+        </div>
+    </div>
+    <div class="book">
+        <div >
+            <a href="lightsout.mp4"><img src="h100.png" alt="Image 3" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Lights Out</p>
+        </div>
+        <div >
+            
+            <a href="dontpeek.mp4"><img src="h20.png" alt="Image 2" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Dont`t Peek</p>
+        </div>
+    </div></div>
+    <div class="image-compute"> 
+        <div class="box">
+            
+        <div >
+            <a href="evildeadrise.mp4"><img src="h33.png" alt="Image 1" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Evil Dead Rise</p>
+        </div>
+        <div >
+            <a href="rings.mp4"><img src="h69.png" alt="Image 4" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Potirate</p>
+        </div>
+    </div>
+    <div class="book">
+        <div >
+            <a href="TheBook.mp4"><img src="h39.png" alt="Image 3" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">The Book</p>
+        </div>
+        <div >
+            
+            <a href="potirateof.mp4"><img src="h35.png" alt="Image 2" style="height: 250px;width: 400px;"></a>
+            <p style="color: rgb(245, 10, 10);">Bloody marry</p>
+        </div>
+    </div></div>
+    <br>
+    <div class="image-container"> 
+    <div class="box">
+        
+    <div >
+        <a href="theelevator.mp4"><img src="h4.png" alt="Image 1" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">The Elevator</p>
+    </div>
+    <div >
+        <a href="dontturnarround.mp4"><img src="h3.png" alt="Image 2" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Don`t turn around</p>
+    </div>
+</div>
+<div class="book">
+    <div >
+        <a href="nosleeptonight.mp4"><img src="h2.png" alt="Image 3" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">No Sleep Tonight</p>
+    </div>
+    <div >
+        <a href="bloodymarry.mp4"><img src="h1.png" alt="Image 4" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Bloody marry</p>
+    </div>
+</div></div>
+<br>
+<div class="image-content"> 
+    <div class="box">
+    <div >
+        <a href="charliecharlie.mp4"><img src="h5.png" alt="Image 1" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Charlie Charlie</p>
+    </div>
+    <div >
+        <a href="afraid.mp4"><img src="h6.png" alt="Image 2" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Afraid</p>
+    </div>
+</div>
+<div class="book">
+    <div >
+        <a href="theloop.mp4"><img src="h7.png" alt="Image 3" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">The Loop</p>
+    </div>
+    <div >
+        <a href="thewait.mp4"><img src="h8.png" alt="Image 4" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">The Wait</p>
+    </div>
+</div></div>
+<br>
+<div class="image-context"> 
+    <div class="box">
+    <div >
+        <a href="shrek2.mp4"><img src="h9.png" alt="Image 1" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Shrek 2</p>
+    </div>
+    <div >
+        <a href="endgame.mp4"><img src="h0.png" alt="Image 2" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">End Game</p>
+    </div>
+</div>
+<div class="book">
+    <div >
+        <a href="infinitywar.mp4"><img src="h12.png" alt="Image 3" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Infinity War</p>
+    </div>
+    <div >
+        <a href="doublevision.mp4"><img src="h11.png" alt="Image 4" style="height: 250px;width: 400px;"></a>
+        <p style="color: rgb(245, 10, 10);">Double Vision</p>
+    </div>
+</div></div>
+    <script src="search.js">
+</script>
+</body>
+</html>

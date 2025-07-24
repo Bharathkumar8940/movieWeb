@@ -1,0 +1,22 @@
+button {
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+button:hover {
+    background-color: rgb(66, 64, 64) !important;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url('venom.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+  }
+  
+  
